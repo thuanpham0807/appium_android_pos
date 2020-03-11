@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Test Suite" >
+    <parameter name="apkFilePath" value="C:\Users\User\Desktop\AtosAppiumTest\apps\atos_pos_dev_4.9.28_10-05-2019_NF_rch__germany_release.apk"></parameter>
+    <listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="LoginTest">
+        <classes>
+            <class name="scenarios.LoginTest"/>
+        </classes>
+    </test>
+</suite>

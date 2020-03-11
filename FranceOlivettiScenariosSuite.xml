@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="France Olivetti Scenarios suite" >
+    <parameter name="apkFilePath" value="C:\Users\User\Desktop\AtosAppiumTest\apps\atos_pos_4.9.74_dev_vn_new_07-08-2019_NF_rch__france_release.apk"></parameter>
+    <listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="France Olivetti Scenarios">
+        <classes>
+            <class name="scenarios.FranceOlivettiScenarios"/>
+        </classes>
+    </test>
+</suite>

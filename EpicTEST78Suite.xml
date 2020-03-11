@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Epic AT-319 Test Suite" >
+    <!--copy and paste your apk file path that you want to run in test suite in parameter | value -->
+    <parameter name="apkFilePath" value="C:\Users\User\Desktop\AtosAppiumTest\apps\atos_pos_4.9.73_01-08-2019_NF_rch__germany_release.apk"></parameter>
+    <listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Epic TEST-78" preserve-order="true">
+        <classes>
+            <class name="scenarios.EpicTEST78">
+
+                <methods>
+                    <exclude name="ticketTEST118SwitchNoOptionEnableDrawerOpening" />
+                    <exclude name="ticketTEST118SwitchYesOptionEnableDrawerOpening" />
+                    <exclude name="ticketTEST6TheTotalAmountHasNoLimit" />
+                    <exclude name="setValueOfBillAmountLimit" />
+                    <exclude name="ticketTEST6TheTotalAmountLessThanLimit" />
+                    <exclude name="ticketTEST6TheTotalAmountEqualLimit" />
+                    <exclude name="ticketTEST6TheTotalAmountLargerThanLimit" />
+                    <exclude name="ticketTEST25ShownPriceListZeroCost" />
+                    <exclude name="ticketTEST25HidePriceListZeroCost"/>
+                    <exclude name="ticketTEST16SwitchYesOptionKeypadsInCentsMode"/>
+                    <exclude name="ticketTEST16SwitchNoOptionKeypadsInCentsMode"/>
+                    <exclude name="ticketTEST10SwitchYesOptionLogoutAfterBill"/>
+                    <exclude name="ticketTEST10SwitchNoOptionLogoutAfterBill"/>
+                    <exclude name="ticketTEST12SwitchNoOptionResetPriceListAfterCloseBillOnFrontend"/>
+                    <exclude name="ticketTEST12SwitchYesOptionResetPriceListAfterCloseBillOnFrontend"/>
+
+                </methods>
+                <!--
+               <methods>
+                   <exclude name="ticketTEST24SwitchNoOptionResetPriceListAfterCloseBillInTable"/>
+                   <exclude name="ticketTEST24SwitchYesOptionResetPriceListAfterCloseBillInTable"/>
+                   <exclude name="ticketTEST20SwitchNoOptionEmptyDrawerAtDailyClosing"/>
+                   <exclude name="ticketTEST20SwitchYesOptionEmptyDrawerAtDailyClosing"/>
+                   <exclude name="reLoginTechnicianAccount"/>
+                   <exclude name="ticketTEST14SwitchNoOptionRestrictAccessToTables"/>
+                   <exclude name="ticketTEST14SwitchYesOptionRestrictAccessToTables"/>
+               </methods>
+               -->
+        </class>
+        </classes>
+    </test>
+</suite>

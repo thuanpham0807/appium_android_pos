@@ -76,8 +76,8 @@ public class FranceOlivettiScenarios extends AndroidSetup {
         DatabaseManagementPage databaseManagementPage = new DatabaseManagementPage(driver);
         databaseManagementPage.selectDatabasesManagementTab();
         databaseManagementPage.selectImportDataButton();
-        databaseManagementPage.scrollToText("db_20180814_054722_40603200.xls");// the data excel file name
-        databaseManagementPage.click(By.name("db_20180814_054722_40603200.xls"));// the data excel file name
+        databaseManagementPage.scrollToText("db_20190225_103436_413000084.xls");// the data excel file name
+        databaseManagementPage.click(By.name("db_20190225_103436_413000084.xls"));// the data excel file name
         Thread.sleep(30000);
         databaseManagementPage.tapOnDeviceBackKey();
         Thread.sleep(3000);
